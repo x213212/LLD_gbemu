@@ -2,12 +2,7 @@
 #include <ppu.h>
 #include <bus.h>
 
-typedef struct {
-    bool active;
-    u8 byte;
-    u8 value;
-    u8 start_delay;
-} dma_context;
+
 
 static dma_context ctx;
 
@@ -39,3 +34,7 @@ bool dma_transferring() {
     return ctx.active;
 }
 
+
+dma_context *dma_get_context() {
+    return &ctx;
+}

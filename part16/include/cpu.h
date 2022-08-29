@@ -33,9 +33,11 @@ typedef struct {
     bool enabling_ime;
     u8 ie_register;
     u8 int_flags;
+    bool save_game;
+    bool load_game;
     
 } cpu_context;
-
+cpu_context *cpu_get_context();
 cpu_registers *cpu_get_regs();
 
 void cpu_init();
