@@ -35,7 +35,7 @@ u32 pixel_fifo_pop() {
     ppu_get_context()->pfc.pixel_fifo.size--;
 
     u32 val = popped->value;
-    // free(popped);
+     free(popped);
 
     return val;
 }

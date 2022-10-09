@@ -91,9 +91,9 @@ bool cpu_step()
         //   if(pc==256)
         //        ctx.regs.a=0;
         // fprintf(fp, "(%02X %02X %02X) A: %02X F: %s BC: %02X%02X DE: %02X%02X HL: %02X%02X\n",
-        //        ctx.cur_opcode,
-        //             bus_read(pc + 1), bus_read(pc + 2), ctx.regs.a, flags, ctx.regs.b, ctx.regs.c,
-        //             ctx.regs.d, ctx.regs.e, ctx.regs.h, ctx.regs.l);
+          //      ctx.cur_opcode,
+            //         bus_read(pc + 1), bus_read(pc + 2), ctx.regs.a, flags, ctx.regs.b, ctx.regs.c,
+              //       ctx.regs.d, ctx.regs.e, ctx.regs.h, ctx.regs.l);
         fetch_data();
 
         // #if CPU_DEBUG == 1
